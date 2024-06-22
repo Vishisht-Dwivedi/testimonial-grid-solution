@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(210, 46%, 95%);
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 13px;
+      color: white;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .inner-container {
+      display: grid;
+      grid-template-areas: 'dan dan dan dan john kira' 'jean pat pat pat pat kira';
+      max-width: 1400px;
+    }
+
+    .dan {
+      grid-area: dan;
+      background: url('E:/Web-Dev_2.0/testimonials-grid-section-main/images/bg-pattern-quotation.svg') no-repeat, linear-gradient(to right, hsl(263, 55%, 52%), hsl(263, 55%, 52%));
+      background-position: 75% 0%;
+      background-size: 30% 35%;
+    }
+
+    .john {
+      grid-area: john;
+      background-color: hsl(217, 19%, 35%);
+    }
+
+    .jean {
+      grid-area: jean;
+      background-color: white;
+    }
+
+    .pat {
+      grid-area: pat;
+      background-color: hsl(219, 29%, 14%);
+    }
+
+    .kira {
+      grid-area: kira;
+      background-color: white;
+    }
+
+    .dan,
+    .john,
+    .jean,
+    .pat,
+    .kira {
+      border-radius: 0.5rem;
+      margin: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0 5px hsl(0, 0%, 81%);
+    }
+
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .head-text {
+      display: block;
+      margin: 1rem;
+    }
+
+    .head-name {
+      font-size: 16px;
+    }
+
+    .subtitle {
+      opacity: 50%;
+    }
+
+    .head-name,
+    .subtitle {
+      display: block;
+    }
+
+    .head-name {
+      font-size: 16px;
+    }
+
+    .big-quote {
+      font-size: 24px;
+      margin: 1.5rem 0 1.5rem;
+      font-weight: 600;
+    }
+
+    .header img {
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      border: 2px solid white;
+    }
+
+    .kira,
+    .jean {
+      color: black;
+    }
+
+    .pat .header img,
+    .dan .header img {
+      border: 2px solid hsl(263, 94%, 69%);
+    }
+
+    .quotes {
+      opacity: 70%;
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    @media (min-width:600px) and (max-width: 950px) {
+      .inner-container {
+        display: grid;
+        grid-template-areas: 'dan dan dan john' 'jean pat pat pat' 'kira kira kira kira';
+        max-width: 1400px;
+
+      }
+
+      .kira {
+        max-width: 40%;
+        margin: auto;
+      }
+    }
+
+    @media (max-width:600px) {
+      .inner-container {
+        display: block;
+      }
+
+      .kira {
+        max-width: 100%;
+        margin: none;
+      }
+
+      .dan,
+      .john,
+      .jean,
+      .pat,
+      .kira {
+        padding: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container">
+    <section class="inner-container">
+      <div class="dan">
+
+        <header class="header">
+          <img src="E:\Web-Dev_2.0\testimonials-grid-section-main\images\image-daniel.jpg" alt="">
+          <div class="head-text">
+            <span class="head-name">Daniel Clifford</span>
+            <span class="subtitle">Verified Graduate</span>
+          </div>
+
+        </header>
+        <div class="big-quote">I received a job offer mid-course, and the subjects I learned were current, if not
+          more so,
+          in the company I joined. I honestly feel I got every penny’s worth.
+        </div>
+        <div class="quotes">
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+          transition and have heard some people who had an amazing experience here. I signed up
+          for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+          The next 12 weeks was the best - and most grueling - time of my life. Since completing
+          the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+        </div>
+      </div>
+      <div class="john">
+        <header class="header">
+          <img src="E:\Web-Dev_2.0\testimonials-grid-section-main\images\image-jonathan.jpg" alt="">
+
+          <div class="head-text">
+            <span class="head-name">Jonathan Walters</span>
+            <span class="subtitle">Verified Graduate</span>
+          </div>
+        </header>
+        <div class="big-quote">The team was very supportive and kept me motivated</div>
+
+        <div class="quotes">
+          “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+          for a big company. This was one of the best investments I’ve made in myself. ”
+
+        </div>
+
+      </div>
+      <div class="jean">
+        <header class="header">
+          <img src="E:\Web-Dev_2.0\testimonials-grid-section-main\images\image-jeanette.jpg" alt="">
+
+          <div class="head-text">
+            <span class="head-name">Jeanette Harmon</span>
+            <span class="subtitle">Verified Graduate</span>
+          </div>
+        </header>
+        <div class="big-quote">An overall wonderful and rewarding experience</div>
+
+
+        <div class="quotes">
+          “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+          while doing something I love. ”
+        </div>
+
+
+      </div>
+      <div class="pat">
+        <header class="header">
+          <img src="E:\Web-Dev_2.0\testimonials-grid-section-main\images\image-patrick.jpg" alt="">
+
+          <div class="head-text">
+            <span class="head-name">Patrick Abrams</span>
+            <span class="subtitle">Verified Graduate</span>
+          </div>
+        </header>
+        <div class="big-quote">Awesome teaching support from TAs who did the bootcamp themselves. Getting
+          guidance from them and
+          learning from their experiences was easy.
+        </div>
+
+        <div class="quotes">
+          “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+          gave me the confidence necessary to be able to go out in the world and present myself as a capable
+          junior developer. The standard is above the rest. You will get the personal attention you need from
+          an incredible community of smart and amazing people. ”
+        </div>
+
+
+      </div>
+      <div class="kira">
+        <header class="header">
+          <img src="E:\Web-Dev_2.0\testimonials-grid-section-main\images\image-kira.jpg" alt="">
+
+          <div class="head-text">
+            <span class="head-name">Kira Whittle</span>
+            <span class="subtitle">Verified Graduate</span>
+          </div>
+        </header>
+        <div class="big-quote">Such a life-changing experience. Highly recommended!
+        </div>
+
+        <div class="quotes">
+          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+          professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+          did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+          could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+          experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+          100% recommend! ”
+        </div>
+
+      </div>
+    </section>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
